@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/UI Audit | The Architecture of Trust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="main-nav" aria-label="Main Navigation">
+    <div class="nav-logo">UserSafety<span>.Frist</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="uxui.html">Design</a></li>
+        <li><a href="front-end.html">Code</a></li>
+        <li><a href="uxuilab.html">UX/UI Lab</a></li>
+        <li><a href="frontlab.html">Coding Lab</a></li>
+        <li><a href="source.html">Archive</a></li>
+    </ul>
+</nav>
+<header class="exhibition-header-technical">
+    <div class="drafting-bg"></div>
+    <div class="header-gradient-overlay"></div>
+    
+    <div class="container-mid header-flex">
+        <div class="header-main-content">
+            <span class="technical-code">Discipline 01: The Architect</span>
+            <h1 class="display-serif">
+               UX/UI Design<br>
+                <span class="accent-text">Accessibility</span> & Ethics
+            </h1>
+            <p class="intro-lead">UX/UI design is not a neutral aesthetic choice. It actively connects with human behavior, social interactions, and individual navigation for social issues. Digital products have the power to either grow user autonomy through inclusivity and a transparent framework or destroy it through deceptive practices and technical exclusion.</p>
+        </div>
+        </div>
+</header>
+
+<section class="section-audit-dark">
+    <div class="audit-container">
+        <div class="audit-main">
+            <h2 class="display-serif">The Current Landscape of Deception</h2>
+            
+            <p class="body-text">
+                UX/UI design currently has pressure where the engagement metrics and stakeholders' benefit often outweigh the fundamental necessity of the safety of users. As documented in <em>"Manipulative, Dark, and Unethical Design Practices,"</em>  the current digital environment is increasingly growing with interfaces and code to undermine user autonomy and negatively impact user behavior and well being. 
+
+            </p>
+            <p class="body-text">
+               This shift can lead to corruption of digital ethics, as ethical and legal issues often struggle to keep up with modern development and new technology. When designer priortize hacking or dark tactics, for example, “attention theft” and “coercive friction”, they choose to contribute to a pervasive culture of distrust. 
+            </p>
+            <p class="body-text">
+                The rise of “dark patterns” as an industry practice shows a disregard for the intent of users in favor of psychological vulnerability for the stakeholder. The design choices are not acceptable. As highlighted by Virginia Tech, these choices aren't accidental; they are "crafted to manipulate."  A designer realizes that the responsibility for these ethical breaches falls on the designers and developers, even though many developers report that external pressure often influences their decision to implement these harmful patterns.
+            </p>
+        </div>
+
+       <aside class="audit-sidebar" >
+    <div class="sidebar-sticky-content">
+        <h3 class="sidebar-title">Evidence Archive</h3>
+        <ul class="ref-list">
+            <li><div id="audit-sidebar">
+                <a href="source.html#source1" class="sidebar-ref-link">
+                    <span class="ref-num">01</span>
+                    <strong>Virginia Tech (2025)</strong>
+                    <p>"These patterns, found everywhere in digital interfaces, ..."</p>
+                </a></div>
+            </li>
+            
+            <li>
+                <a href="source.html#sourcemis1" class="sidebar-ref-link">
+                    <span class="ref-num">02</span>
+                    <strong>Marymount University (2024)</strong>
+                    <p>The findings reveal that manipulative UI/UX design practices ...</p>
+                </a>
+            </li>
+            <li>
+                <a href="source.html#sourcegov1" class="sidebar-ref-link">
+                    <span class="ref-num">03</span>
+                    <strong>Deceptive Design: How to Identify and Combat Consequence Design</strong>
+                    <p>Attention Theft inundates users with notifications or information  ...</p>
+                </a>
+            </li>
+            <li><div id="audit-sidebar">
+                <a href="source.html#sourcegov2" class="sidebar-ref-link">
+                    <span class="ref-num">04</span>
+                    <strong>Deceptive Design: How to Identify and Combat Consequence Design</strong>
+                    
+                    <p>Guilt Friction employs design patterns to reinforce guilt as a user ...</p>
+                </a></div>
+            </li>
+            </ul>
+    
+    </div>
+</aside>
+    </div>
+</section>
+
+<section class="section-standards-cream">
+    <div class="info-block" >
+        <div class="theory-side" id ="theory-side">
+            <h2 class="display-serif">The Inclusivity Mandate</h2>
+            <p class="body-text">
+                As cited in <em>"Accessibility for Designers and UX Researchers,"</em> accessibility and inclusivity are indivisible. The current design can use “trickery”  through deceptive patterns, while an ethical product prioritizes responsiveness and readability. Choosing personal aesthetic over up to code standards created barriers that lock out portions of the population from viewing websites.  Per ADA, people with limited vision cannot read text if there is not enough contrast .
+            </p>
+              <a href="source.html#sourceada1" class="sidebar-ref-link">
+            <div class="stat-box">
+                <h4>ADA Standard</h4>
+                <p>“It can be hard for some people with vision disabilities to see text on a web page if there is not enough contrast between the color of the text and the background color."
+</p>
+</a>
+            </div>
+        </div>
+        <div class="evidence-side">
+    <div class="simple-comparison-box">
+        <div class="visual-output" id="output-area">
+            <h3 id="verdict-label">DECEPTIVE</h3>
+            <p id="ui-text" class="contrast-fail">I agree to the terms and the $50 yearly subscription fee.</p>
+        </div>
+
+        <div class="simple-audit-note">
+            <p id="audit-desc"><strong>Audit Note:</strong> The price is hidden using low-contrast light grey text (#D0D0D0). This is a "Sneak-into-Basket" pattern that fails ADA contrast standards.</p>
+        </div>
+
+        <div class="toggle-group">
+            <button onclick="setSimpleView('bad')" class="toggle-btn active" id="btn-bad">Stakeholder View</button>
+            <button onclick="setSimpleView('good')" class="toggle-btn" id="btn-good">Ethical View</button>
+        </div>
+
+        <a class="groupaudit" href="uxuilab.html#lab-stage">UX UI Lab  →</a>
+    </div>
+</div>
+</section>
+<section class="section-patterns-clay">
+    <div class="container-wide">
+        <h2 class="display-serif">Deceptive Patterns: The "Dark" UI</h2>
+        <div class="grid-3-col">
+            <div class="pattern-card" id="pattern-card">
+                <span class="pattern-id">Pattern 01</span>
+                <h3>Visual Trickery</h3>
+                <p>Visual trickery consists of UI tricks for crafting that influence or manipulate users into doing things they might not consent to. The design choices that are made are not accidental. They are created to exploit a users psychological vulnerabilities in the benefit of the stakeholder at the expense of the user. (Liang 2025)</p>
+                <a href="source.html#source2" class="btn-ref">View Evidence 01 →</a>
+                <a href="uxuilab.html#dark-patterns-lab" class="btn-ref">View Live Lab 01 →</a>
+            </div>
+
+            <div class="pattern-card">
+                <span class="pattern-id">Pattern 02</span>
+                <h3>The Roach Motel</h3>
+                <p>The Roach Motel is a dark pattern in which the sources define UI choices "crafted to manipulate or trick users into actions that they are not intended to do". This pattern focuses on understanding user autonomy by making it easy to get stuck in situations. Situations like subscriptions and data sharing agreements while making it it hard to leave. </p>
+                <a href="source.html#sourcemis2" class="btn-ref">View Evidence 02 →</a>
+                <a href="uxuilab.html#dark-patterns-lab" class="btn-ref">View Live Lab 02 →</a>
+                
+            </div>
+
+            <div class="pattern-card">
+                <span class="pattern-id">Pattern 03</span>
+                <h3>Misdirection</h3>
+                <p>Misdirection is a tactic in deceptive design. UI elements are specifically "crafted to manipulate or trick users into situations they don't knowingly enter. Designers use visuals to guide a user through a specific action to serve a business rather than the needs of the user. This design exploits psychological vulnerabilities for stakeholders.</p>
+                <a href="source.html#source2" class="btn-ref">View Evidence 03 →</a>
+                <a href="uxuilab.html#dark-patterns-lab"  class="btn-ref">View Live Lab 03 →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-conflict-light">
+    <div class="container-mid">
+        <h2 class="display-serif">The Stakeholder Conflict</h2>
+        <p class="body-text">
+           An issue of <em>"Understanding User and Developer Perceptions"</em> is the tension between ethical design and business KPIs. Designers can find themselves at a crossroads between two bad decisions: 
+        </p>
+          <a href="source.html#source2" class="splitcards">
+        <div class="conflict-split">
+            <div class="side-a">
+                <h4 >Stakeholder Pressure</h4>
+                <p>Prioritizes "Growth Hacking," high conversion rates, and retention at any cost to the user experience.</p>
+            </div>
+            </a>
+            <a href="source.html#source2" >
+            <div class="side-b">
+                <h4>Ethical Responsibility</h4>
+                <p>Prioritizes user autonomy, informed consent, and long-term trust as defined by the ADA and WCAG.</p>
+            </div>
+        </a>
+        </div>
+        <p class="body-text" style="margin-top: 40px;">
+            When these goals clash, "Dark Patterns" are often the result of prioritizing short-term metrics over human-centric standards.
+        </p>
+    </div>
+</section>
+
+
+<section class="section-black-box">
+    <input type="radio" id="slide-1" name="carousel-control" checked>
+    <input type="radio" id="slide-2" name="carousel-control">
+
+    <div class="container-fluid">
+        <div class="dossier-header">
+            <h2 class="display-serif">The Architecture of Deception: A Dual Audit</h2>
+            <div class="carousel-nav">
+                <label for="slide-1" class="btn-1">01. Algorithmic Bias</label>
+                <label for="slide-2" class="btn-2">02. Design Malfeasance</label>
+                <div class="nav-indicator"></div>
+            </div>
+        </div>
+
+        <div class="carousel-viewport">
+            <div class="carousel-track">
+                <div class="slide">
+                    <div class="dense-grid">
+                        <div class="col-summary">
+                            <span class="tag">Executive Summary</span>
+                            <p>AI systems often suffer from systemic "algorithmic opacity.” This creates a “black box” effect where the location and logic of decisions are obscure from real designer oversight. This lack of transparency causes many issues. It creates a mirrored failure of “responsiveness” where automated interfaces neglect accessibility like WCAG. This would be due to the failure of prioritizing an adaptable and traceable design; AI developers risk creating “accessibility barriers” that lock out populations from online resources.</p>
+                        </div>
+                        <div class="col-analysis">
+                            <span class="tag">Sources</span>
+                            <ul class="source-list">
+                                <li><a href="source.html#ethics1" class="homelastlink">Liang (2025)</a></li>
+                                <li><a href="source.html#port1" class="homelastlink">WCAG 2.1 AA Mandates</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-evidence" id="audit-1">
+                            <span class="tag">Forensic Exhibit: Contrast Failure</span>
+                            <div class="audit-sandbox failed">
+                                <div class="sim-content">
+                                    <p class="sample-text">Systemic Barrier Detected.</p>
+                                    <button class="sim-btn">LOG_IN</button>
+                                </div>
+                                <div class="telemetry">CONTRAST_RATIO: 1.2:1 [FAIL]</div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="dense-grid">
+                        <div class="col-summary">
+                            <span class="tag">Executive Summary</span>
+                            <p>Deceptive architectures fundamentally erode user autonomy and trust and take away choices and transparency. The Designs “mediate our behavior,” exploiting psychological vulnerabilities, making it so that stakeholders are prioritized. When users encounter traps, it creates "limited options for avoidance." It created negative emotions and skepticism. Without explainable logic, the risk of rapid degradation of public trust gets reinforced.</p>
+                        </div>
+                        <div class="col-analysis">
+                            <span class="tag">Sources</span>
+                            <ul class="source-list">
+                                <li><a href="source.html#ethics2" class="homelastlink">Autonomy & Trust Audit</a></li>
+                            </ul>
+                            <ul class="source-list">
+                                <li><a href="source.html#sourcemis1" class="homelastlink">“The findings reveal that  ....”</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-evidence" id="audit-2">
+                            <span class="tag">Forensic Exhibit: Confirshaming</span>
+                            <div class="audit-sandbox failed">
+                                <div class="sim-content">
+                                    <p class="sample-text">Do you want to lose your data?</p>
+                                    <div class="btn-group">
+                                        <button class="btn-secondary">Yes, I'm careless</button>
+                                        <button class="btn-primary">No, keep me safe</button>
+                                    </div>
+                                </div>
+                                <div class="telemetry">PATTERN: DECEPTIVE_CHOICE [FAIL]</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="section-action-plan">
+    <div class="container-mid">
+        <div class="centered-header">
+            <h2 class="display-serif">Restoring Digital Integrity</h2>
+            <p class="body-text">Getting ethics and accessibility is important to getting back on track. Designers and developers must collaborate.</p>
+        </div>
+        
+        <div class="checklist-grid">
+            <div class="check-item">
+                <span class="check-num">01</span>
+                <h4>Semantic Integrity</h4>
+                <p>Use proper coding tags for images to ensure screen reader readability.
+        
+                    <a id="check1"href="source.html#percent3" class="homelastlink">"One out of every five linked images was missing alternative text."</a></p>
+            </div>
+            <div class="check-item">
+                <span class="check-num">02</span>
+                <h4>Autonomy First</h4>
+                <p>Never use "Confirmshaming" or "Trickery" to influence a user's choice.</p>
+                
+              <a id="check1"href="source.html#sourcemis2" class="homelastlink"> "Dark patterns, which describe deceptive design tactics that trick ..."</a> </p>
+            </div>  
+           
+            
+            <div class="check-item">
+                <span class="check-num">03</span>
+                <h4>Overall Design</h4>
+                 <p><a id="check1"href="source.html#port4" class="homelastlink">"Accessibility and inclusivity are indivisible and critical elements of good design. Consider the native language, literacy, digital literacy, and digital access of your users as well as potential visual, hearing, motor, and cognitive disabilities."</p>
+               </a> </div>
+        </div>
+    </div>
+</section>
+<script src="scriptdesign.js"></script>
+<footer class="site-footer">
+    <p>&copy; 2026 | Professional UX Ethics Project</p>
+</footer>
+
+</body>
+</html>

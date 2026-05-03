@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architecture of Trust | Ethics in Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="main-nav" aria-label="Main Navigation">
+    <div class="nav-logo">UserSafety<span>.Frist</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="uxui.html">Design</a></li>
+        <li><a href="front-end.html">Code</a></li>
+        <li><a href="uxuilab.html">UX/UI Lab</a></li>
+        <li><a href="frontlab.html">Coding Lab</a></li>
+        <li><a href="source.html">Archive</a></li>
+    </ul>
+</nav>
+
+<header id="front-end-lab-hero" class="lab-hero-encapsulated">
+    <div class="lab-noise-layer"></div>
+    
+    <div class="lab-code-bg-wrap">
+        <div id="code-conveyor" class="code-conveyor">
+            <div class="scroll-block" id="buffer-1"></div>
+            <div class="scroll-block" id="buffer-2"></div>
+        </div>
+    </div>
+
+    <div class="lab-hero-container">
+        <div class="lab-hero-centered-stack">
+            <div class="lab-title-block">
+                <span class="lab-meta-tag">// SYSTEM_MANIFESTO_v03</span>
+                <h1 class="lab-display-title">
+                    Front-End <span class="lab-clay-text">Coding</span> <span class="lab-outline-text">Lab</span>
+                </h1>
+            </div>
+
+            <div class="lab-manifesto-center">
+                <p class="lab-description">
+                     Have fun with the Live Lab and experience the rights and wrongs of Front End development and accessibility.
+                </p>
+                 <div class="lab-accent-divider"></div>
+                    <div class="lab-status-indicator">
+                        <span class="lab-status-dot"></span>
+                        <span class="lab-status-text">LOGIC_ACTIVE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="deceptive-patterns-lab">
+    <div class="lab-container">
+        <header class="audit-header">
+            <h2 class="audit-title">System Audit: <span class="clay-text">Behavioral Logic</span></h2>
+            <div class="audit-meta">
+                <span>[ STATUS: ACTIVE ]</span>
+                <span>[ VERSION: 2.0.4 ]</span>
+            </div>
+        </header>
+
+        <nav class="audit-nav">
+            <button class="audit-tab active" onclick="switchPattern('attention')">01_ATTENTION</button>
+            <button class="audit-tab" onclick="switchPattern('coercive')">02_COERCION</button>
+            <button class="audit-tab" onclick="switchPattern('guilt')">03_MANIPULATION</button>
+            <button class="audit-tab" onclick="switchPattern('developer')">04_COMPLICITY</button>
+        </nav>
+
+        <div id="pattern-sandbox" class="audit-viewport">
+            </div>
+    </div>
+</section>
+<div id="lab-root">
+    <header class="lab-header">
+        <h1 id="topic-title" class="lab-title">Engineering for Inclusive Access</h1>
+        <p id="topic-desc" class="lab-def"></p>
+    </header>
+
+    <nav class="topic-nav">
+        <button class="nav-btn active" data-topic="assistive" onclick="AuditLab.init('assistive')">Assistive Technology Integration</button>
+        <button class="nav-btn" data-topic="navigation" onclick="AuditLab.init('navigation')">Structural Navigation Logic</button>
+        <button class="nav-btn" data-topic="sensory" onclick="AuditLab.init('sensory')">Sensory Interference</button>
+    </nav>
+
+    <section id="tag-library" class="tag-library"></section>
+
+    <div class="lab-main">
+        <main class="code-panel">
+            <div id="code-display" class="code-skeleton"></div>
+        </main>
+
+        <aside class="terminal">
+            <span style="font-size:0.6rem; color:#dbd9d9; text-transform:uppercase; letter-spacing:2px;">Diagnostic Engine</span>
+            <div id="log-out" style="margin-top:20px; color:#dbd9d9; font-family:monospace; font-size:0.85rem; line-height:1.6;"></div>
+            
+            <div class="terminal-actions">
+                <button class="action-btn btn-submit" onclick="AuditLab.checkAudit()">Submit Audit</button>
+                <button class="action-btn btn-reset" onclick="AuditLab.init(AuditLab.activeTopic)">Reset</button>
+            </div>
+
+            <div style="margin-top:auto; font-size:0.75rem; color:#dbd9d9; border-top:1px solid #dbd9d9; padding-top:20px;">
+                Mapping the Accessibility Tree ensures functional parity for keyboard and non-visual paths.
+            </div>
+        </aside>
+    </div>
+</div>
+<div id="audit-lab-root">
+  <header class="audit-header">
+    <h1 class="audit-main-title">AI & Algorithmic Implementation</h1>
+  </header>
+
+  <nav class="audit-nav">
+    <button class="audit-nav-link active" data-mod="bias">Programmer Bias</button>
+    <button class="audit-nav-link" data-mod="blackbox">The Black-Box Problem</button>
+    <button class="audit-nav-link" data-mod="theft">IP & Theft</button>
+  </nav>
+
+  <div class="audit-workspace">
+    <div class="audit-panel-left">
+      <div id="audit-module-desc" class="audit-desc-area"></div>
+      
+      <div id="audit-diag-box" class="audit-diagnostic-box">
+        <div class="diag-header">Structural Audit Diagnostic</div>
+        <div id="audit-logic-display" class="diag-content">
+          Select and drag a developer prompt below to initiate structural analysis.
+        </div>
+      </div>
+
+      <div id="audit-prompt-list" class="audit-list-area"></div>
+    </div>
+
+    <div class="audit-panel-right">
+      <div id="audit-drop-zone" class="audit-drop-zone">Drag prompt here to build...</div>
+      
+      <div id="audit-wf-canvas" class="audit-stage">
+        <div class="audit-placeholder">Output Preview</div>
+      </div>
+
+      <div id="audit-report-card" class="audit-report-footer" style="display:none;">
+        <button id="audit-reset-btn" class="audit-reset-btn">Reset Engine</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="frontlab.js"></script>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architecture of Trust | Ethics in Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="main-nav" aria-label="Main Navigation">
+       <div class="nav-logo">UserSafety<span>.Frist</span></div>
+        <ul class="nav-links">
+             <li><a href="index.html">Home</a></li>
+        <li><a href="uxui.html">Design</a></li>
+        <li><a href="front-end.html">Code</a></li>
+        <li><a href="uxuilab.html">UX/UI Lab</a></li>
+        <li><a href="frontlab.html">Coding Lab</a></li>
+        <li><a href="source.html">Archive</a></li>
+        </ul>
+    </nav>
+
+    <header id="ux-lab-hero" class="lab-hero-encapsulated">
+        <div class="lab-noise-layer"></div>
+        <div class="lab-bg-image-wrap">
+            <img src="img/uxuiimage.png" alt="UX Logic Schematic">
+        </div>
+
+        <div class="lab-hero-container">
+            <div class="lab-hero-centered-stack">
+                <div class="lab-title-block">
+                    <span class="lab-meta-tag">// SYSTEM_MANIFESTO_v02</span>
+                    <h1 class="lab-display-title">
+                        UX/UI <span class="lab-clay-text">Design</span> <span class="lab-outline-text">Lab</span>
+                    </h1>
+                </div>
+
+                <div class="lab-manifesto-center">
+                    <p class="lab-description">
+                        Have fun with the Live Lab and experience the rights and wrongs of User experience and accessibility.
+                    </p>
+                    <div class="lab-accent-divider"></div>
+                    <div class="lab-status-indicator">
+                        <span class="lab-status-dot"></span>
+                        <span class="lab-status-text">LOGIC_ACTIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="ux-audit-suite" class="lab-suite-light">
+        <div class="lab-header">
+    <div class="header-container">
+        <span class="lab-meta">// HEURISTIC_SYSTEM_V3</span>
+        <h2 class="lab-title">The <span class="clay-text">Inclusivity</span> <span class="outline-text">Mandate</span></h2>
+        
+        <p class="lab-description" id="lab-instructions">
+            Audit the technical "mesh" between human psychology and digital interfaces.
+        </p>
+    </div>
+</div>
+
+        <nav class="lab-nav">
+            <button class="lab-tab active" data-target="contrast">01_CONTRAST</button>
+            <button class="lab-tab" data-target="logic">02_LOGIC</button>
+        </nav>
+
+        <div class="lab-stage" id=lab-stage>
+            
+            <div class="lab-panel active" id="contrast">
+                <div class="workbench">
+                    <div class="workbench-controls">
+                        <div class="manual-controls">
+                            <label class="section-label">Manual Override</label>
+                            <div class="control-grid">
+                                <div class="control-box">
+                                    <label>BG</label>
+                                    <input type="color" id="bg-color" value="#ffffff">
+                                </div>
+                                <div class="control-box">
+                                    <label>Text</label>
+                                    <input type="color" id="text-color" value="#bc5434">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div class="preset-controls">
+                            <label class="section-label">Diagnostic Case Studies</label>
+                            <button class="preset-btn" data-scenario="low-mesh">SCENARIO_ALPHA (Fail)</button>
+                            <button class="preset-btn" data-scenario="high-contrast">SCENARIO_BETA (Pass)</button>
+                        </div>
+                    </div>
+                    
+                    <div class="workbench-preview" id="preview-window">
+                        <div class="preview-content">
+                            <h3 id="p-head">Visual Clarity</h3>
+                            <p id="p-body">Diagnostic Simulation Active.</p>
+                        </div>
+
+                        <div class="validation-console visible" id="contrast-log">
+                            <span class="log-status">SYSTEM_READY</span>
+                            <p class="log-reason">Adjust colors manually or select a case study to begin analysis.</p>
+                        </div>
+                        
+                        <div class="status-hud">
+                            <span id="live-ratio">4.5:1</span>
+                            <small id="live-status">PASS</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          <div class="lab-panel" id="logic">
+    <div class="workbench">
+        <div class="workbench-controls">
+            <div class="manual-controls">
+                <label class="section-label">System Control</label>
+                <button id="logic-toggle" class="system-btn">STATE: BROKEN</button>
+                <p class="hint">1. Click a button below.<br>2. Use <strong>TAB</strong> to move.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="preset-controls">
+                <label class="section-label">Diagnostic Presets</label>
+                <button class="logic-preset-btn" data-type="trap">SCENARIO_GAMMA (Trap)</button>
+                <button class="logic-preset-btn" data-type="ghost">SCENARIO_DELTA (Ghost)</button>
+                <button class="logic-preset-btn" data-type="secure">SCENARIO_OMEGA (Secure)</button>
+            </div>
+        </div>
+        
+        <div class="workbench-preview logic-preview broken" id="logic-stage">
+            <div class="mock-nav">
+                <button class="m-btn">SYSTEM_INIT</button>
+                <button class="m-btn">DATA_QUERY</button>
+                <button class="m-btn">CORE_HALT</button>
+            </div>
+
+            <div class="validation-console visible" id="logic-log">
+                <span class="log-status">SYSTEM_UNSAFE</span>
+                <p class="log-reason">Outline: none detected. User intent is unconfirmed.</p>
+            </div>
+
+            <div class="status-hud">
+                <small>STATUS</small>
+                <span id="l-status">UNSAFE</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="dark-patterns-lab" class="lab-suite-dark">
+    <div class="header-container">
+        <span class="lab-meta">// SYSTEM_ETHICS_AUDIT</span>
+        <h2 class="lab-title">Deceptive <span class="clay-text">Patterns</span></h2>
+        <p class="lab-description">
+            Analysis of the "Dark" UI: Where stakeholder profit overrides user agency through psychological exploits.
+        </p>
+    </div>
+
+    <div class="workbench">
+        <div class="workbench-controls">
+            <label class="section-label">Select Exploit</label>
+            <button class="dark-btn" onclick="runExploit('trickery')">Visual Trickery</button>
+            <button class="dark-btn" onclick="runExploit('motel')">The Roach Motel</button>
+            <button class="dark-btn" onclick="runExploit('misdirection')">Misdirection</button>
+            
+            <div class="divider"></div>
+            <button id="reset-dark" onclick="resetDarkLab()" class="system-btn">RESET_SIMULATION</button>
+        </div>
+
+        <div class="workbench-preview" id="dark-stage">
+           <div class="workbench-preview" id="dark-stage">
+    <div class="scanline"></div>
+    
+    <div id="dark-sandbox" class="sandbox-container">
+        <p class="terminal-text">SYSTEM_READY: SELECT_EXPLOIT_TO_BEGIN</p>
+    </div>
+
+    <div class="validation-console" id="dark-console">
+        <span id="dark-status" class="log-status">MONITORING</span>
+        <p id="dark-log" class="log-reason">Interact with the UI to reveal the deceptive mesh.</p>
+    </div>
+</div>
+</section>
+    </section>
+<section id="ethical-audit-v30" class="lab-suite-dark">
+    <div class="lab-grid">
+        <div class="control-panel border-sage-right">
+            <div class="header-container border-clay-top">
+                <span class="lab-meta text-sage">// BLUEPRINT_STRESS_TEST_v30</span>
+                <h2 class="lab-title">Ethical <span class="clay-text">Audits</span></h2>
+                <p class="instruction-text">
+                    1. Drag components from the row below. <br> 
+                    2. Stack them in the device frame. <br>
+                    3. **Resize the frame corner** to test resilience.
+                </p>
+            </div>
+
+            <div class="horizontal-dock border-clay-y">
+                <div class="drag-item" draggable="true" id="nav-fluid" ondragstart="drag(event)" data-type="header" data-spec="fluid">Fluid_Header</div>
+                <div class="drag-item" draggable="true" id="nav-static" ondragstart="drag(event)" data-type="header" data-spec="static">Static_Header</div>
+                <div class="drag-item" draggable="true" id="hero-fluid" ondragstart="drag(event)" data-type="hero" data-spec="fluid">Fluid_Hero</div>
+                <div class="drag-item" draggable="true" id="mission-fluid" ondragstart="drag(event)" data-type="mission" data-spec="fluid">Mission_Stmt</div>
+                <div class="drag-item" draggable="true" id="cta-standard" ondragstart="drag(event)" data-type="cta" data-spec="standard">CTA_44px</div>
+                <div class="drag-item" draggable="true" id="cta-small" ondragstart="drag(event)" data-type="cta" data-spec="small">CTA_22px</div>
+            </div>
+
+            <div class="action-bar">
+                <button class="btn-clay" onclick="resetLab()">RESET_WORKBENCH</button>
+            </div>
+            
+            <div id="audit-terminal" class="terminal-box border-sage-left">
+                <span class="prompt text-clay">></span> <span id="terminal-text">System operational. Deploy components.</span>
+            </div>
+        </div>
+
+        <div class="device-panel">
+            <div class="resizable-device border-clay-dim" id="audit-frame">
+                <div class="device-header">
+                    <span class="device-status text-sage">VIEWPORT_SCALING_READY</span>
+                </div>
+                <div id="drop-zone-stack" class="stack-zone" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)">
+                    </div>
+                <div class="resize-handle text-clay">⠿</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="uxuilab.js"></script>
+</body>
+</html>
